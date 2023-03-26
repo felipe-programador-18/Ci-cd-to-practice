@@ -1,11 +1,12 @@
-const express = require("express")
-const router = express.Router()
 
+const sum = (a,b) => {
+    return a *b
+}
+sum(20,300)
 
-router.get("/more", (req, res) => {
-    res.send("testing another router here")
-})
+const split = (c,d) => {
+    return c *d
+}
+split(100,2)
 
-router.get("/",  (req, res) => {
-    res.send("test to practice a bit more about ci and cd")
-})
+module.exports = {sum, split}
