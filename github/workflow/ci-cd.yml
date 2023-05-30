@@ -1,7 +1,6 @@
 name: Unit test
 
-on:
-  
+on: 
   push:
     branches: 
      - "**"
@@ -11,7 +10,7 @@ on:
 jobs:
    
    tests:
-    runs-on: "windows-latest"
+    runs-on: "ubuntu-latest"
     steps:
       - uses: actions/checkout@v2  
       - uses: "use node.js v18.15.0"
