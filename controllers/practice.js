@@ -2,7 +2,8 @@
 const sum = (a,b) => {
     return a *b
 }
-sum(20,300)
+console.log(sum(20,300))
+
 
 const split = (c,d) => {
     return c /d

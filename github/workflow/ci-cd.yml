@@ -1,7 +1,6 @@
 name: Unit test
 
-on:
-  
+on: 
   push:
     branches: 
      - "**"
