@@ -12,11 +12,11 @@ jobs:
    tests:
     runs-on: "ubuntu-latest"
     steps:
-      - uses: actions/checkout@v2  
-      - uses: "use node.js v18.16.0"
-     uses: actions/setup-node@v1
-        with:
-          node-version: '18.x' 
-      - run: npm ci
-      - run: npm test
-      - name: Jest
+        - uses: actions/checkout@v2  
+        - uses: "use node.js v18.16.0"
+          uses: actions/setup-node@v1
+          with:
+            node-version: '18.x' 
+        - run: npm ci
+        - run: npm test
+        - name: Jest
