@@ -1,22 +1,22 @@
-name: Unit test
-'on':
+name: CI(continuous integration)
+
+on:
   push:
     branches:
-      - master
-  pull_request:
-    branches:
-      - master
+      - main
+      - test
+
 jobs:
-  tests:
+
+  pipeline-ci:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up nodejs 18.x
-        uses: actions/setup-node@v3
-        with:
-          node-version:
-            - 14.x
-      - name: Setup project
-      - run: npm ci
-      - name: Run unit tests
-      - run: npm test
+    
+      - uses: actions/checkout@v2
+    
+      - name: Setting Node.js
+        uses: actions/setup-node@v2
+
+      - name: Run tests
+        run: npm install && npm run test 
+      
