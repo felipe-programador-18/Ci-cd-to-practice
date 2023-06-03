@@ -9,4 +9,6 @@ test("split my results", () => {
     expect(sum.split(10,5)).toBe(2)
 })
 
-
+test("testing my more", () => {
+    expect(sum.more(10,2)).toBe(12)
+})

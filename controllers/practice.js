@@ -10,4 +10,9 @@ const split = (c,d) => {
 }
 split(100,2)
 
-module.exports = {sum, split}
+const more = (f, g) => {
+    return f+g
+}
+
+
+module.exports = {sum, split, more}
